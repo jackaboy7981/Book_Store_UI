@@ -1,0 +1,39 @@
+.slidecontainer{
+    height: 550px;
+    overflow: hidden;
+}
+.slidewrapper{
+    display:flex;
+    animation: slide 16s infinite;
+    animation-timing-function: linear;
+
+}
+.slide{
+    height: 550px;
+    z-index: -1;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.catchphrase{
+    position: relative;
+    width: 1000px;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%,0px);
+    color: white;
+    font-weight: 500;
+    font-size: 60px;
+    font-family: "Bebas Neue";
+}
+.subheading{
+    font-family: "Bebas Neue";
+    font-weight: 100;
+    font-size: 30px;
+    margin: 20px 0 10px 40px;
+}

@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
 
+  displaylogin:string = "block";
+  displayregister:string = "none";
   constructor() { }
+
+  Logindisplay(){
+    this.displaylogin = "block";
+    this.displayregister = "none";
+  }
+
+  Registerdisplay(){
+    this.displaylogin = "none";
+    this.displayregister = "block";
+  }
 
   ngOnInit(): void {
   }
