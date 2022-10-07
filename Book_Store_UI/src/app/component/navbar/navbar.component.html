@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img class="navbar-brand" href="#" src="./assets/Bookstorelogo.jpg" style="height: 70px;padding: 0px 30px 0px 40px;">
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" routerLink="/home">Home </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="NavControl()">Category</a>
+            </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <app-searchbar></app-searchbar>
+        </li>
+      </ul>
+     
+    </div>
+  </nav>
+  <div id="mySidenav" class="sidenav" [style.height]="height">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/home">Home </a>
+            </li>
+          </ul>
+         
+        </div>
+      </nav>
+  </div>
