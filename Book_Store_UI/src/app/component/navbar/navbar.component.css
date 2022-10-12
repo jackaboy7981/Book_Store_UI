@@ -11,6 +11,10 @@
     color: #f1f1f1;
   }
   
+  .nav-link{
+    font-family: "Bebas Neue";
+    font-size: 25px;
+  }
   @media screen and (max-width: 450px) {
     .sidenav {padding-top: 15px;}
   }

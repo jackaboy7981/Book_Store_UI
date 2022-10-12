@@ -1,0 +1,17 @@
+<div class="slidecontainer" #scroll>
+    <div class="slidewrapper">
+        <div *ngFor="let item of data">
+            <div *ngIf="item.Title == undefined;">
+                <div class="box catbox">
+                    {{item.Categoryname}}
+                </div>
+            </div>
+            <div *ngIf="item.Title !== undefined;">
+                <div class="box">
+                    <img src="{{item.Img}}">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

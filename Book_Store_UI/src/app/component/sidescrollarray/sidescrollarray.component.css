@@ -1,0 +1,48 @@
+.slidecontainer{
+    height: 340px;
+    width: 90vw;
+    margin: 0 2.5vw 0 2.5vw;
+}
+.slidewrapper{
+    height: 95vw;
+    width: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transform:rotate(-90deg) translateY(-340px);
+}
+.slidewrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+.box{
+    height: 300px;
+    width: 300px;
+
+    margin: 20px;
+    transform: rotate(90deg) translateX(300px);
+    transform-origin: right top;
+}
+
+.catbox{
+    justify-content: center; /* Centering Horizantly */
+    align-items: center;
+
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    color:white;
+
+    background: #84fab0;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    display: flex;
+}
+.box:hover{
+    margin: 40px;
+}
+img{
+    width: 300px;
+    height: 300px;
+}

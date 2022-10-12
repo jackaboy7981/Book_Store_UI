@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,7 @@ import { RegisterComponent } from './component/register/register.component';
 import { SearchbarComponent } from './component/searchbar/searchbar.component';
 import { AboutComponent } from './page/about/about.component';
 import { ContactComponent } from './page/contact/contact.component';
+import { SidescrollarrayComponent } from './component/sidescrollarray/sidescrollarray.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { ContactComponent } from './page/contact/contact.component';
     RegisterComponent,
     SearchbarComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    SidescrollarrayComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
